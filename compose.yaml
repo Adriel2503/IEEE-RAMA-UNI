@@ -3,7 +3,7 @@ services:
     build:
       context: .
     ports:
-      - "${PORT:-3000}:${PORT:-3000}"
+      - "${PORT}:${PORT}"
     env_file:
       - path: .env
         required: false
