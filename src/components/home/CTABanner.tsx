@@ -1,9 +1,10 @@
 import Button from "@/components/ui/Button";
 import ScrollReveal from "@/components/ui/ScrollReveal";
+import { IEEE_JOIN_URL } from "@/lib/constants";
 
 export default function CTABanner() {
   return (
-    <section className="relative overflow-hidden bg-[#00629B] py-16 md:py-20">
+    <section className="relative overflow-hidden bg-primary py-16 md:py-20">
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_50%,_white_0%,_transparent_50%)]" />
@@ -24,7 +25,7 @@ export default function CTABanner() {
               <Button
                 variant="cta"
                 size="lg"
-                href="https://www.ieee.org/membership/join/index.html"
+                href={IEEE_JOIN_URL}
                 target="_blank"
                 rel="noopener noreferrer"
               >

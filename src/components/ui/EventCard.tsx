@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Calendar, MapPin } from "lucide-react";
 import { formatDate } from "@/lib/utils";
 import type { Event, Chapter } from "@/lib/types";
+import { IEEE_BLUE } from "@/lib/constants";
 
 interface EventCardProps {
   event: Event;
@@ -16,7 +17,7 @@ export default function EventCard({ event, chapters }: EventCardProps) {
       {/* Image placeholder */}
       <div
         className="relative h-48 w-full"
-        style={{ backgroundColor: chapter?.color ?? "#00629B" }}
+        style={{ backgroundColor: chapter?.color ?? IEEE_BLUE }}
       >
         <div className="absolute inset-0 flex items-center justify-center">
           <span className="text-4xl font-bold text-white/30">

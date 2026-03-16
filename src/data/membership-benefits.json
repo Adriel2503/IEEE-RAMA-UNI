@@ -1,0 +1,17 @@
+[
+  {
+    "icon": "BookOpen",
+    "title": "Acceso a IEEE Xplore",
+    "description": "Biblioteca digital con millones de artículos, papers y publicaciones técnicas de todo el mundo."
+  },
+  {
+    "icon": "Globe",
+    "title": "Networking Global",
+    "description": "Conéctate con más de 400,000 miembros IEEE en todo el mundo. Conferencias, colaboraciones y oportunidades."
+  },
+  {
+    "icon": "Award",
+    "title": "Desarrollo Profesional",
+    "description": "Talleres, certificaciones, competencias y experiencia en liderazgo técnico que potencian tu carrera."
+  }
+]

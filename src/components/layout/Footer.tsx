@@ -1,21 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Instagram, Linkedin, Facebook, Mail, MapPin } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 import navigationData from "@/data/navigation.json";
+import { socialIcons } from "@/lib/icon-maps";
 
-const socialIcons: Record<string, React.ComponentType<{ className?: string }>> = {
-  Instagram,
-  Linkedin,
-  Facebook,
-};
-
-const quickLinks = [
-  { label: "Nosotros", href: "/nosotros" },
-  { label: "Capítulos", href: "/capitulos" },
-  { label: "Eventos", href: "/eventos" },
-  { label: "Proyectos", href: "/proyectos" },
-  { label: "Membresía", href: "/membresia" },
-];
+const quickLinks = navigationData.mainNav.filter((item) => item.href !== "/");
 
 export default function Footer() {
   return (

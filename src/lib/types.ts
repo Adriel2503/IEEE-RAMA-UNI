@@ -53,4 +53,11 @@ export interface NavigationData {
   topBar: NavItem[];
   mainNav: NavItem[];
   social: SocialLink[];
+  email: string;
+}
+
+export interface MembershipBenefit {
+  icon: string;
+  title: string;
+  description: string;
 }

@@ -1,11 +1,5 @@
-import { Instagram, Linkedin, Facebook } from "lucide-react";
 import navigationData from "@/data/navigation.json";
-
-const socialIcons: Record<string, React.ComponentType<{ className?: string }>> = {
-  Instagram,
-  Linkedin,
-  Facebook,
-};
+import { socialIcons } from "@/lib/icon-maps";
 
 export default function TopBar() {
   return (

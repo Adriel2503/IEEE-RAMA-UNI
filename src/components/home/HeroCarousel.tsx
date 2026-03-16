@@ -3,41 +3,22 @@
 import { useState, useEffect, useCallback } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { cn } from "@/lib/utils";
-
-const slides = [
-  {
-    title: "Sé Parte de Algo Más Grande con IEEE UNI",
-    description:
-      "Únete a más de 100 estudiantes innovadores y transforma el futuro de la ingeniería desde la Universidad Nacional de Ingeniería.",
-    cta: { label: "Únete ahora", href: "https://www.ieee.org/membership/join/index.html" },
-  },
-  {
-    title: "8 Capítulos Técnicos para Tu Pasión",
-    description:
-      "Robótica, circuitos, inteligencia artificial, biomedicina, energía y más. Encuentra tu camino en la ingeniería.",
-    cta: { label: "Ver capítulos", href: "/capitulos" },
-  },
-  {
-    title: "Desde 1967, Formando Ingenieros",
-    description:
-      "Una de las ramas estudiantiles IEEE más antiguas de Latinoamérica. Reconocida como Rama Ejemplar de la Región 9.",
-    cta: { label: "Nuestra historia", href: "/nosotros" },
-  },
-];
+import { heroSlides } from "@/data/hero-slides";
+import { CAROUSEL_INTERVAL_MS } from "@/lib/constants";
 
 export default function HeroCarousel() {
   const [current, setCurrent] = useState(0);
 
   const next = useCallback(
-    () => setCurrent((prev) => (prev + 1) % slides.length),
+    () => setCurrent((prev) => (prev + 1) % heroSlides.length),
     []
   );
 
   const prev = () =>
-    setCurrent((prev) => (prev - 1 + slides.length) % slides.length);
+    setCurrent((prev) => (prev - 1 + heroSlides.length) % heroSlides.length);
 
   useEffect(() => {
-    const interval = setInterval(next, 6000);
+    const interval = setInterval(next, CAROUSEL_INTERVAL_MS);
     return () => clearInterval(interval);
   }, [next]);
 
@@ -65,7 +46,7 @@ export default function HeroCarousel() {
       </div>
 
       {/* Slides — Card overlay style (like ieee.org) */}
-      {slides.map((slide, index) => (
+      {heroSlides.map((slide, index) => (
         <div
           key={index}
           className={cn(
@@ -78,7 +59,7 @@ export default function HeroCarousel() {
             {/* Blue card overlay — ieee.org style */}
             <div className="max-w-2xl">
               {/* Title block with blue background */}
-              <div className="bg-[#00629B]/90 backdrop-blur-sm px-8 py-6 md:px-10 md:py-8">
+              <div className="bg-primary/90 backdrop-blur-sm px-8 py-6 md:px-10 md:py-8">
                 {index === 0 ? (
                   <h1 className="font-heading text-2xl font-semibold leading-snug text-white md:text-4xl lg:text-[2.5rem]">
                     {slide.title}
@@ -98,7 +79,7 @@ export default function HeroCarousel() {
                   </p>
                   <a
                     href={slide.cta.href}
-                    className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-[#00629B] hover:underline"
+                    className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-primary hover:underline"
                   >
                     <ChevronRight className="h-4 w-4" />
                     {slide.cta.label}
@@ -109,14 +90,14 @@ export default function HeroCarousel() {
                 <div className="hidden flex-col gap-1 md:flex">
                   <button
                     onClick={next}
-                    className="flex h-8 w-8 items-center justify-center rounded-full text-[#00629B] hover:bg-gray-100 transition-colors cursor-pointer"
+                    className="flex h-8 w-8 items-center justify-center rounded-full text-primary hover:bg-gray-100 transition-colors cursor-pointer"
                     aria-label="Siguiente slide"
                   >
                     <ChevronRight className="h-5 w-5" />
                   </button>
                   <button
                     onClick={prev}
-                    className="flex h-8 w-8 items-center justify-center rounded-full text-[#00629B] hover:bg-gray-100 transition-colors cursor-pointer"
+                    className="flex h-8 w-8 items-center justify-center rounded-full text-primary hover:bg-gray-100 transition-colors cursor-pointer"
                     aria-label="Slide anterior"
                   >
                     <ChevronLeft className="h-5 w-5" />
@@ -146,7 +127,7 @@ export default function HeroCarousel() {
 
       {/* Dot indicators */}
       <div className="absolute bottom-5 left-1/2 -translate-x-1/2 flex gap-2 md:hidden">
-        {slides.map((_, index) => (
+        {heroSlides.map((_, index) => (
           <button
             key={index}
             onClick={() => setCurrent(index)}

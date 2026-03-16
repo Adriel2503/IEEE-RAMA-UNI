@@ -3,9 +3,10 @@ import ChapterCard from "@/components/ui/ChapterCard";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 import chaptersData from "@/data/chapters.json";
 import type { Chapter } from "@/lib/types";
+import { loadJsonData } from "@/lib/utils";
 
 export default function ChaptersGrid() {
-  const chapters = chaptersData as Chapter[];
+  const chapters = loadJsonData<Chapter>(chaptersData);
 
   return (
     <section className="bg-background py-16 md:py-24">

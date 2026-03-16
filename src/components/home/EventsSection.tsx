@@ -5,10 +5,11 @@ import Button from "@/components/ui/Button";
 import eventsData from "@/data/events.json";
 import chaptersData from "@/data/chapters.json";
 import type { Event, Chapter } from "@/lib/types";
+import { loadJsonData } from "@/lib/utils";
 
 export default function EventsSection() {
-  const events = eventsData as Event[];
-  const chapters = chaptersData as Chapter[];
+  const events = loadJsonData<Event>(eventsData);
+  const chapters = loadJsonData<Chapter>(chaptersData);
 
   return (
     <section className="bg-background-alt py-16 md:py-24">

@@ -8,13 +8,14 @@ import DarkModeToggle from "./DarkModeToggle";
 import Button from "@/components/ui/Button";
 import navigationData from "@/data/navigation.json";
 import { cn } from "@/lib/utils";
+import { IEEE_JOIN_URL, NAVBAR_SCROLL_THRESHOLD } from "@/lib/constants";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 80);
+    const handleScroll = () => setScrolled(window.scrollY > NAVBAR_SCROLL_THRESHOLD);
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -89,7 +90,7 @@ export default function Navbar() {
           <Button
             variant="primary"
             size="sm"
-            href="https://www.ieee.org/membership/join/index.html"
+            href={IEEE_JOIN_URL}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -143,7 +144,7 @@ export default function Navbar() {
               <Button
                 variant="primary"
                 size="md"
-                href="https://www.ieee.org/membership/join/index.html"
+                href={IEEE_JOIN_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full"

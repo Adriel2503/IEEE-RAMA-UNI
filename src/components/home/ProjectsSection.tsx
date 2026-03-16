@@ -5,10 +5,11 @@ import Button from "@/components/ui/Button";
 import projectsData from "@/data/projects.json";
 import chaptersData from "@/data/chapters.json";
 import type { Project, Chapter } from "@/lib/types";
+import { loadJsonData } from "@/lib/utils";
 
 export default function ProjectsSection() {
-  const projects = projectsData as Project[];
-  const chapters = chaptersData as Chapter[];
+  const projects = loadJsonData<Project>(projectsData);
+  const chapters = loadJsonData<Chapter>(chaptersData);
 
   return (
     <section className="bg-background py-16 md:py-24">

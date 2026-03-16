@@ -2,27 +2,17 @@ import { BookOpen, Globe, Award } from "lucide-react";
 import SectionHeading from "@/components/ui/SectionHeading";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 import Button from "@/components/ui/Button";
+import { IEEE_JOIN_URL } from "@/lib/constants";
+import benefitsData from "@/data/membership-benefits.json";
+import type { MembershipBenefit } from "@/lib/types";
 
-const benefits = [
-  {
-    icon: BookOpen,
-    title: "Acceso a IEEE Xplore",
-    description:
-      "Biblioteca digital con millones de artículos, papers y publicaciones técnicas de todo el mundo.",
-  },
-  {
-    icon: Globe,
-    title: "Networking Global",
-    description:
-      "Conéctate con más de 400,000 miembros IEEE en todo el mundo. Conferencias, colaboraciones y oportunidades.",
-  },
-  {
-    icon: Award,
-    title: "Desarrollo Profesional",
-    description:
-      "Talleres, certificaciones, competencias y experiencia en liderazgo técnico que potencian tu carrera.",
-  },
-];
+const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
+  BookOpen,
+  Globe,
+  Award,
+};
+
+const benefits = benefitsData as MembershipBenefit[];
 
 export default function MembershipSection() {
   return (
@@ -39,7 +29,7 @@ export default function MembershipSection() {
             <ScrollReveal key={benefit.title} delay={i * 0.1}>
               <div className="rounded-[var(--radius-lg)] border border-border bg-surface p-8 text-center transition-all duration-200 hover:shadow-lg">
                 <div className="mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-full bg-primary-light">
-                  <benefit.icon className="h-7 w-7 text-primary" />
+                  {(() => { const Icon = iconMap[benefit.icon]; return Icon ? <Icon className="h-7 w-7 text-primary" /> : null; })()}
                 </div>
                 <h3 className="text-lg font-bold text-text">{benefit.title}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-text-secondary">
@@ -54,7 +44,7 @@ export default function MembershipSection() {
             <Button
               variant="cta"
               size="lg"
-              href="https://www.ieee.org/membership/join/index.html"
+              href={IEEE_JOIN_URL}
               target="_blank"
               rel="noopener noreferrer"
             >

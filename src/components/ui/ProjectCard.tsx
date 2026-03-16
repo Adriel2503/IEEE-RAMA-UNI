@@ -1,5 +1,6 @@
 import { ExternalLink } from "lucide-react";
 import type { Project, Chapter } from "@/lib/types";
+import { IEEE_BLUE } from "@/lib/constants";
 
 interface ProjectCardProps {
   project: Project;
@@ -14,7 +15,7 @@ export default function ProjectCard({ project, chapters }: ProjectCardProps) {
       {/* Image placeholder */}
       <div
         className="relative h-44 w-full"
-        style={{ backgroundColor: chapter?.color ?? "#00629B" }}
+        style={{ backgroundColor: chapter?.color ?? IEEE_BLUE }}
       >
         <div className="absolute inset-0 flex items-center justify-center">
           <span className="text-3xl font-bold text-white/30">

@@ -4,6 +4,8 @@ import { useState, useEffect, useRef } from "react";
 import { Calendar, Users, UserCheck, CalendarDays } from "lucide-react";
 import statsData from "@/data/stats.json";
 import type { Stat } from "@/lib/types";
+import { COUNTER_DURATION_MS, COUNTER_STEPS } from "@/lib/constants";
+import { loadJsonData } from "@/lib/utils";
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   Calendar,
@@ -37,8 +39,8 @@ function AnimatedCounter({ value, prefix, suffix }: { value: number; prefix: str
   useEffect(() => {
     if (!started) return;
 
-    const duration = 1500;
-    const steps = 40;
+    const duration = COUNTER_DURATION_MS;
+    const steps = COUNTER_STEPS;
     const increment = value / steps;
     let current = 0;
     let step = 0;
@@ -61,7 +63,7 @@ function AnimatedCounter({ value, prefix, suffix }: { value: number; prefix: str
 }
 
 export default function StatsBar() {
-  const stats = statsData as Stat[];
+  const stats = loadJsonData<Stat>(statsData);
 
   return (
     <section className="bg-background py-12 md:py-16">
