@@ -17,9 +17,9 @@ export default function ChaptersGrid() {
             subtitle="10 capítulos técnicos donde puedes desarrollar tu pasión por la ingeniería"
           />
         </ScrollReveal>
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="flex flex-wrap justify-center gap-5">
           {chapters.map((chapter, i) => (
-            <ScrollReveal key={chapter.slug} delay={i * 0.05}>
+            <ScrollReveal key={chapter.slug} delay={i * 0.05} className="w-full sm:w-[calc(50%-10px)] lg:w-[calc(25%-15px)]">
               <ChapterCard chapter={chapter} />
             </ScrollReveal>
           ))}
