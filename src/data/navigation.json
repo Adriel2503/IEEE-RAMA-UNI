@@ -16,9 +16,9 @@
     { "label": "Contacto", "href": "/contacto" }
   ],
   "social": [
-    { "platform": "instagram", "href": "https://instagram.com/ieeeuni", "icon": "Instagram" },
-    { "platform": "linkedin", "href": "https://linkedin.com/company/ieee-uni", "icon": "Linkedin" },
-    { "platform": "facebook", "href": "https://facebook.com/ieeeuni", "icon": "Facebook" }
+    { "platform": "instagram", "href": "https://www.instagram.com/ieee.uni/", "icon": "Instagram" },
+    { "platform": "linkedin", "href": "https://www.linkedin.com/company/rama-estudiantil-ieee-uni", "icon": "Linkedin" },
+    { "platform": "facebook", "href": "https://www.facebook.com/reieeeuni", "icon": "Facebook" }
   ],
-  "email": "contacto@ieeeuni.org"
+  "email": "reieee@uni.edu.pe"
 }
