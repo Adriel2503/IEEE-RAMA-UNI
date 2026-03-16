@@ -14,7 +14,7 @@ export default function ChaptersGrid() {
         <ScrollReveal>
           <SectionHeading
             title="Nuestros Capítulos"
-            subtitle="8 capítulos técnicos donde puedes desarrollar tu pasión por la ingeniería"
+            subtitle="10 capítulos técnicos donde puedes desarrollar tu pasión por la ingeniería"
           />
         </ScrollReveal>
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">

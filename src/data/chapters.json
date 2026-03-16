@@ -51,7 +51,7 @@
   },
   {
     "slug": "emb",
-    "name": "EMB",
+    "name": "EMBS",
     "fullName": "Engineering in Medicine and Biology Society",
     "description": "Capítulo que une la ingeniería con la medicina, desarrollando tecnologías biomédicas para mejorar la salud.",
     "color": "#EF4444",
@@ -78,5 +78,25 @@
     "yearFounded": null,
     "globalUrl": "https://wie.ieee.org/",
     "icon": "Sparkles"
+  },
+  {
+    "slug": "cis",
+    "name": "CIS",
+    "fullName": "Computational Intelligence Society",
+    "description": "Enfocado en inteligencia computacional, redes neuronales, lógica difusa y computación evolutiva.",
+    "color": "#6366F1",
+    "yearFounded": null,
+    "globalUrl": "https://cis.ieee.org/",
+    "icon": "BrainCircuit"
+  },
+  {
+    "slug": "cs",
+    "name": "CS",
+    "fullName": "Computer Society",
+    "description": "La sociedad más grande de IEEE, dedicada a la computación, software, hardware y tecnologías de la información.",
+    "color": "#14B8A6",
+    "yearFounded": null,
+    "globalUrl": "https://www.computer.org/",
+    "icon": "Monitor"
   }
 ]

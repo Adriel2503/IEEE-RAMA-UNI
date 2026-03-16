@@ -1,11 +1,11 @@
 import Link from "next/link";
 import type { Chapter } from "@/lib/types";
 import {
-  Zap, Radio, Bot, Cpu, Activity, HeartPulse, Factory, Sparkles,
+  Zap, Radio, Bot, Cpu, Activity, HeartPulse, Factory, Sparkles, BrainCircuit, Monitor,
 } from "lucide-react";
 
 const iconMap: Record<string, React.ComponentType<{ className?: string; style?: React.CSSProperties }>> = {
-  Zap, Radio, Bot, Cpu, Activity, HeartPulse, Factory, Sparkles,
+  Zap, Radio, Bot, Cpu, Activity, HeartPulse, Factory, Sparkles, BrainCircuit, Monitor,
 };
 
 interface ChapterCardProps {
@@ -27,11 +27,8 @@ export default function ChapterCard({ chapter }: ChapterCardProps) {
       >
         <Icon className="h-6 w-6" style={{ color: chapter.color }} />
       </div>
-      <h3 className="text-lg font-bold text-text">{chapter.name}</h3>
+      <h3 className="text-lg font-bold text-text">IEEE {chapter.name} UNI</h3>
       <p className="mt-1 text-sm text-text-secondary">{chapter.fullName}</p>
-      <p className="mt-3 text-sm text-text-muted line-clamp-2">
-        {chapter.description}
-      </p>
     </Link>
   );
 }

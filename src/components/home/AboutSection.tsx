@@ -23,7 +23,7 @@ export default function AboutSection() {
                   Latinoamérica.
                 </p>
                 <p>
-                  Con <strong className="text-text">8 capítulos técnicos</strong> y más de{" "}
+                  Con <strong className="text-text">10 capítulos técnicos</strong> y más de{" "}
                   <strong className="text-text">100 miembros activos</strong>, organizamos
                   eventos, talleres, conferencias y proyectos de investigación
                   que conectan a nuestros estudiantes con la comunidad global de
