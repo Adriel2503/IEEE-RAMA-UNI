@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Menu, X, Search } from "lucide-react";
-import DarkModeToggle from "./DarkModeToggle";
 import Button from "@/components/ui/Button";
 import navigationData from "@/data/navigation.json";
 import { cn } from "@/lib/utils";
@@ -48,7 +47,7 @@ export default function Navbar() {
             height={40}
             className={cn(
               "h-10 w-auto transition-opacity",
-              scrolled ? "block dark:hidden" : "hidden"
+              scrolled ? "block" : "hidden"
             )}
             priority
           />
@@ -59,7 +58,7 @@ export default function Navbar() {
             height={40}
             className={cn(
               "h-10 w-auto transition-opacity",
-              scrolled ? "hidden dark:block" : "block"
+              scrolled ? "hidden" : "block"
             )}
             priority
           />
@@ -85,8 +84,6 @@ export default function Navbar() {
             ))}
           </div>
 
-          <DarkModeToggle />
-
           <Button
             variant="primary"
             size="sm"
@@ -100,7 +97,6 @@ export default function Navbar() {
 
         {/* Mobile controls */}
         <div className="flex items-center gap-2 lg:hidden">
-          <DarkModeToggle />
           <button
             onClick={() => setIsOpen(!isOpen)}
             className={cn(

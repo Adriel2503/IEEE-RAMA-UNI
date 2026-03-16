@@ -50,21 +50,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" className={`${inter.variable} ${sourceSerif.variable}`} suppressHydrationWarning>
-      <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              try {
-                if (localStorage.getItem('theme') === 'dark' ||
-                    (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-                  document.documentElement.classList.add('dark')
-                }
-              } catch(e) {}
-            `,
-          }}
-        />
-      </head>
+    <html lang="es" className={`${inter.variable} ${sourceSerif.variable}`}>
       <body className="antialiased">
         <TopBar />
         <Navbar />
