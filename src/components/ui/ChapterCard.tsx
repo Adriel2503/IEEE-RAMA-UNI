@@ -1,19 +1,14 @@
 import Link from "next/link";
+import { Cpu } from "lucide-react";
 import type { Chapter } from "@/lib/types";
-import {
-  Zap, Radio, Bot, Cpu, Activity, HeartPulse, Factory, Sparkles, BrainCircuit, Monitor,
-} from "lucide-react";
-
-const iconMap: Record<string, React.ComponentType<{ className?: string; style?: React.CSSProperties }>> = {
-  Zap, Radio, Bot, Cpu, Activity, HeartPulse, Factory, Sparkles, BrainCircuit, Monitor,
-};
+import { chapterIcons } from "@/lib/icon-maps";
 
 interface ChapterCardProps {
   chapter: Chapter;
 }
 
 export default function ChapterCard({ chapter }: ChapterCardProps) {
-  const Icon = iconMap[chapter.icon] || Cpu;
+  const Icon = chapterIcons[chapter.icon] || Cpu;
 
   return (
     <Link

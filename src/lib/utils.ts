@@ -15,3 +15,11 @@ export function formatDate(dateString: string): string {
     day: "numeric",
   });
 }
+
+export function parseDateParts(dateString: string): { day: number; monthShort: string } {
+  const date = new Date(dateString + "T00:00:00");
+  return {
+    day: date.getDate(),
+    monthShort: date.toLocaleDateString("es-PE", { month: "short" }).replace(".", ""),
+  };
+}
