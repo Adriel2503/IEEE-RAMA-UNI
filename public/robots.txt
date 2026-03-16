@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ieee-rama-uni.vercel.app/sitemap.xml

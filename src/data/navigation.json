@@ -1,0 +1,24 @@
+{
+  "topBar": [
+    { "label": "IEEE.org", "href": "https://www.ieee.org/" },
+    { "label": "IEEE Xplore", "href": "https://ieeexplore.ieee.org/" },
+    { "label": "IEEE Standards", "href": "https://standards.ieee.org/" },
+    { "label": "IEEE Peru", "href": "https://ieee.org.pe/" }
+  ],
+  "mainNav": [
+    { "label": "Inicio", "href": "/" },
+    { "label": "Nosotros", "href": "/nosotros" },
+    { "label": "Capítulos", "href": "/capitulos" },
+    { "label": "Eventos", "href": "/eventos" },
+    { "label": "Proyectos", "href": "/proyectos" },
+    { "label": "Noticias", "href": "/noticias" },
+    { "label": "Membresía", "href": "/membresia" },
+    { "label": "Contacto", "href": "/contacto" }
+  ],
+  "social": [
+    { "platform": "instagram", "href": "https://instagram.com/ieeeuni", "icon": "Instagram" },
+    { "platform": "linkedin", "href": "https://linkedin.com/company/ieee-uni", "icon": "Linkedin" },
+    { "platform": "facebook", "href": "https://facebook.com/ieeeuni", "icon": "Facebook" }
+  ],
+  "email": "contacto@ieeeuni.org"
+}

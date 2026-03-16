@@ -1,0 +1,27 @@
+[
+  {
+    "id": "project-1",
+    "title": "Sistema de Asistencia Visual para Invidentes",
+    "description": "Aplicación de visión por computadora que describe el entorno en tiempo real mediante inteligencia artificial, ayudando a personas con discapacidad visual.",
+    "chapter": "sps",
+    "tags": ["Python", "OpenCV", "OpenAI", "TTS"],
+    "image": "/images/projects/placeholder.jpg",
+    "repoUrl": "https://github.com/ieee-uni"
+  },
+  {
+    "id": "project-2",
+    "title": "Robot Seguidor de Línea Autónomo",
+    "description": "Diseño y construcción de un robot seguidor de línea con sensores infrarrojos y control PID para competencias de robótica.",
+    "chapter": "ras",
+    "tags": ["Arduino", "Control PID", "Electrónica"],
+    "image": "/images/projects/placeholder.jpg"
+  },
+  {
+    "id": "project-3",
+    "title": "Diseño de Amplificador Operacional en CMOS",
+    "description": "Proyecto de diseño de un amplificador operacional de dos etapas en tecnología CMOS 180nm usando herramientas EDA.",
+    "chapter": "cas",
+    "tags": ["VLSI", "Cadence", "CMOS", "Analog Design"],
+    "image": "/images/projects/placeholder.jpg"
+  }
+]

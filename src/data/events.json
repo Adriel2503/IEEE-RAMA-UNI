@@ -1,0 +1,32 @@
+[
+  {
+    "id": "event-1",
+    "title": "CAS Legacy 2025",
+    "date": "2025-12-20",
+    "chapter": "cas",
+    "description": "Conferencia anual del capítulo CAS con ponentes nacionales e internacionales sobre circuitos integrados y sistemas embebidos.",
+    "image": "/images/events/placeholder.jpg",
+    "status": "past",
+    "location": "Auditorio FIEE — UNI, Lima"
+  },
+  {
+    "id": "event-2",
+    "title": "Workshop de Inteligencia Artificial",
+    "date": "2026-04-15",
+    "chapter": "sps",
+    "description": "Taller práctico de deep learning y visión por computadora con herramientas de Python y PyTorch.",
+    "image": "/images/events/placeholder.jpg",
+    "status": "upcoming",
+    "location": "Laboratorio FIEE — UNI, Lima"
+  },
+  {
+    "id": "event-3",
+    "title": "RoboChallenge UNI 2026",
+    "date": "2026-05-10",
+    "chapter": "ras",
+    "description": "Competencia de robótica abierta a todos los estudiantes de la UNI. Categorías: seguidor de línea y robots autónomos.",
+    "image": "/images/events/placeholder.jpg",
+    "status": "upcoming",
+    "location": "Campus UNI, Lima"
+  }
+]

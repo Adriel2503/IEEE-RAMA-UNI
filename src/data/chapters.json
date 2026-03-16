@@ -1,0 +1,82 @@
+[
+  {
+    "slug": "pes",
+    "name": "PES",
+    "fullName": "Power & Energy Society",
+    "description": "Capítulo dedicado a la generación, transmisión y distribución de energía eléctrica, promoviendo la innovación en sistemas de potencia.",
+    "color": "#EAB308",
+    "yearFounded": 2004,
+    "globalUrl": "https://www.ieee-pes.org/",
+    "icon": "Zap"
+  },
+  {
+    "slug": "comsoc",
+    "name": "ComSoc",
+    "fullName": "Communications Society",
+    "description": "Enfocado en telecomunicaciones, redes y sistemas de comunicación, conectando a estudiantes con la industria de las comunicaciones.",
+    "color": "#0EA5E9",
+    "yearFounded": 2004,
+    "globalUrl": "https://www.comsoc.org/",
+    "icon": "Radio"
+  },
+  {
+    "slug": "ras",
+    "name": "RAS",
+    "fullName": "Robotics and Automation Society",
+    "description": "Capítulo de robótica y automatización, donde los estudiantes diseñan y construyen robots, y exploran la automatización industrial.",
+    "color": "#F97316",
+    "yearFounded": null,
+    "globalUrl": "https://www.ieee-ras.org/",
+    "icon": "Bot"
+  },
+  {
+    "slug": "cas",
+    "name": "CAS",
+    "fullName": "Circuits and Systems Society",
+    "description": "Dedicado al diseño de circuitos electrónicos, sistemas embebidos, procesamiento de señales y diseño de chips.",
+    "color": "#8B5CF6",
+    "yearFounded": null,
+    "globalUrl": "https://ieee-cas.org/",
+    "icon": "Cpu"
+  },
+  {
+    "slug": "sps",
+    "name": "SPS",
+    "fullName": "Signal Processing Society",
+    "description": "Enfocado en procesamiento de señales, visión por computadora, aprendizaje automático y aplicaciones de inteligencia artificial.",
+    "color": "#22C55E",
+    "yearFounded": null,
+    "globalUrl": "https://signalprocessingsociety.org/",
+    "icon": "Activity"
+  },
+  {
+    "slug": "emb",
+    "name": "EMB",
+    "fullName": "Engineering in Medicine and Biology Society",
+    "description": "Capítulo que une la ingeniería con la medicina, desarrollando tecnologías biomédicas para mejorar la salud.",
+    "color": "#EF4444",
+    "yearFounded": null,
+    "globalUrl": "https://www.embs.org/",
+    "icon": "HeartPulse"
+  },
+  {
+    "slug": "ias",
+    "name": "IAS",
+    "fullName": "Industry Applications Society",
+    "description": "Enfocado en aplicaciones industriales de la ingeniería eléctrica y electrónica, automatización y control de procesos.",
+    "color": "#D97706",
+    "yearFounded": null,
+    "globalUrl": "https://ias.ieee.org/",
+    "icon": "Factory"
+  },
+  {
+    "slug": "wie",
+    "name": "WIE",
+    "fullName": "Women in Engineering",
+    "description": "Grupo de afinidad que promueve la participación y el liderazgo de las mujeres en la ingeniería y la tecnología.",
+    "color": "#EC4899",
+    "yearFounded": null,
+    "globalUrl": "https://wie.ieee.org/",
+    "icon": "Sparkles"
+  }
+]

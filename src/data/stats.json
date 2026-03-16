@@ -1,0 +1,30 @@
+[
+  {
+    "label": "Años de historia",
+    "value": 59,
+    "prefix": "+",
+    "suffix": "",
+    "icon": "Calendar"
+  },
+  {
+    "label": "Capítulos técnicos",
+    "value": 8,
+    "prefix": "",
+    "suffix": "",
+    "icon": "Users"
+  },
+  {
+    "label": "Miembros activos",
+    "value": 100,
+    "prefix": "+",
+    "suffix": "",
+    "icon": "UserCheck"
+  },
+  {
+    "label": "Eventos al año",
+    "value": 30,
+    "prefix": "+",
+    "suffix": "",
+    "icon": "CalendarDays"
+  }
+]
