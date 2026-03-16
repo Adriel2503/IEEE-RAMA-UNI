@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X, Search } from "lucide-react";
 import DarkModeToggle from "./DarkModeToggle";
 import Button from "@/components/ui/Button";
@@ -38,27 +39,29 @@ export default function Navbar() {
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 md:px-6">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-3" onClick={() => setIsOpen(false)}>
-          <div className={cn(
-            "flex h-10 w-10 items-center justify-center rounded-[var(--radius-md)] transition-all",
-            scrolled ? "bg-primary" : "bg-white/10 border border-white/20"
-          )}>
-            <span className="text-sm font-bold text-white">IE</span>
-          </div>
-          <div className="flex flex-col leading-tight">
-            <span className={cn(
-              "text-base font-bold tracking-wide transition-colors",
-              scrolled ? "text-text" : "text-white"
-            )}>
-              IEEE UNI
-            </span>
-            <span className={cn(
-              "text-[10px] italic hidden sm:block transition-colors",
-              scrolled ? "text-text-muted" : "text-gray-400"
-            )}>
-              Advancing Technology for Humanity
-            </span>
-          </div>
+        <Link href="/" className="flex items-center" onClick={() => setIsOpen(false)}>
+          <Image
+            src="/logos/ieee_uni_rgb_u_horizontal.svg"
+            alt="IEEE UNI - Universidad Nacional de Ingeniería"
+            width={200}
+            height={40}
+            className={cn(
+              "h-10 w-auto transition-opacity",
+              scrolled ? "block dark:hidden" : "hidden"
+            )}
+            priority
+          />
+          <Image
+            src="/logos/ieee_uni_rgb_u_horizontal_w.png"
+            alt="IEEE UNI - Universidad Nacional de Ingeniería"
+            width={200}
+            height={40}
+            className={cn(
+              "h-10 w-auto transition-opacity",
+              scrolled ? "hidden dark:block" : "block"
+            )}
+            priority
+          />
         </Link>
 
         {/* Desktop right section — IEEE style: search + hamburger */}

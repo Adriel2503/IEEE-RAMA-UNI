@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Instagram, Linkedin, Facebook, Mail, MapPin } from "lucide-react";
 import navigationData from "@/data/navigation.json";
 
@@ -23,14 +24,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-10 md:grid-cols-3">
           {/* Column 1: About */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="flex h-9 w-9 items-center justify-center rounded-[var(--radius-md)] bg-primary">
-                <span className="text-sm font-bold text-white">IE</span>
-              </div>
-              <div>
-                <p className="text-sm font-bold">IEEE UNI</p>
-                <p className="text-[10px] text-gray-400">Rama Estudiantil</p>
-              </div>
+            <div className="mb-4">
+              <Image
+                src="/logos/ieee_uni_rgb_u_stacked_w.png"
+                alt="IEEE UNI - Universidad Nacional de Ingeniería"
+                width={180}
+                height={80}
+                className="h-16 w-auto"
+              />
             </div>
             <p className="text-sm text-gray-400 leading-relaxed">
               La Rama Estudiantil IEEE de la Universidad Nacional de Ingeniería,
