@@ -85,8 +85,8 @@ export default function ChaptersOrbit({ chapters }: ChaptersOrbitProps) {
       >
         {chapters.map((chapter, i) => {
           const angle = (2 * Math.PI * i) / chapters.length - Math.PI / 2;
-          const x = 50 + RADIUS_PERCENT * Math.cos(angle);
-          const y = 50 + RADIUS_PERCENT * Math.sin(angle);
+          const x = Math.round((50 + RADIUS_PERCENT * Math.cos(angle)) * 100) / 100;
+          const y = Math.round((50 + RADIUS_PERCENT * Math.sin(angle)) * 100) / 100;
 
           return (
             <OrbitalNode

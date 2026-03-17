@@ -23,7 +23,7 @@ export default function HeroCarousel() {
   }, [next]);
 
   return (
-    <section className="relative h-[85vh] min-h-[600px] overflow-hidden bg-black">
+    <section className="relative h-[75vh] min-h-[500px] overflow-hidden bg-black">
       {/* Background image/pattern — dark atmospheric */}
       <div className="absolute inset-0">
         {/* Dark gradient base */}

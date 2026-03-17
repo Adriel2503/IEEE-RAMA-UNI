@@ -3,7 +3,7 @@ import { socialIcons } from "@/lib/icon-maps";
 
 export default function TopBar() {
   return (
-    <div className="hidden bg-[#1a1a1a] text-gray-400 md:block relative z-50">
+    <div className="hidden bg-[#1a1a1a] text-gray-400 md:block">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-1.5 text-xs">
         {/* IEEE global links */}
         <div className="flex items-center gap-4">
