@@ -8,8 +8,9 @@ import type { Event, Chapter } from "@/lib/types";
 import { loadJsonData } from "@/lib/utils";
 
 export default function EventsSection() {
-  const events = loadJsonData<Event>(eventsData);
+  const allEvents = loadJsonData<Event>(eventsData);
   const chapters = loadJsonData<Chapter>(chaptersData);
+  const events = allEvents.filter((e) => e.status === "upcoming");
 
   return (
     <section className="bg-background-alt py-16 md:py-24">

@@ -63,7 +63,13 @@ function AnimatedCounter({ value, prefix, suffix }: { value: number; prefix: str
 }
 
 export default function StatsBar() {
-  const stats = loadJsonData<Stat>(statsData);
+  const stats = loadJsonData<Stat>(statsData).map((stat) => {
+    // "Años de historia": value stores the founding year, calculate dynamically
+    if (stat.label === "Años de historia") {
+      return { ...stat, value: new Date().getFullYear() - stat.value };
+    }
+    return stat;
+  });
 
   return (
     <section className="bg-background py-12 md:py-16">
