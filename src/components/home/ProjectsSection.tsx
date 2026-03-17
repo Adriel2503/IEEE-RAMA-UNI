@@ -20,7 +20,7 @@ export default function ProjectsSection() {
             subtitle="Tecnología real creada por estudiantes de la UNI"
           />
         </ScrollReveal>
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
           {projects.map((project, i) => (
             <ScrollReveal key={project.id} delay={i * 0.1}>
               <ProjectCard project={project} chapters={chapters} />
