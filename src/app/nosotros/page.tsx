@@ -77,20 +77,20 @@ export default function NosotrosPage() {
                 <p className="mt-1 text-sm text-text-secondary">
                   {member.role}
                 </p>
-                <div className="mt-2 flex flex-col items-center gap-2 md:flex-row md:gap-3">
+                <div className="mt-2 flex items-center gap-3">
                   <a
                     href={`mailto:${member.email}`}
                     className="inline-flex items-center gap-1.5 text-xs text-primary hover:underline"
                   >
                     <Mail className="h-3.5 w-3.5" />
-                    {member.email}
+                    <span className="hidden md:inline">{member.email}</span>
                   </a>
                   {member.linkedin && (
                     <a
                       href={member.linkedin}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 text-xs text-primary/60 hover:text-primary transition-colors"
+                      className="text-primary/60 hover:text-primary transition-colors"
                       aria-label={`LinkedIn de ${member.name}`}
                     >
                       <Linkedin className="h-4 w-4" />
