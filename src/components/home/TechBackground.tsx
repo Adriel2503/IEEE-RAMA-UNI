@@ -10,10 +10,10 @@ interface Particle {
   radius: number;
 }
 
-const PARTICLE_COUNT = 45;
-const CONNECTION_DISTANCE = 150;
-const SPEED = 0.3;
-const PARTICLE_COLOR = "rgba(0, 98, 155,"; // IEEE Blue
+const PARTICLE_COUNT = 55;
+const CONNECTION_DISTANCE = 160;
+const SPEED = 0.35;
+const PARTICLE_COLOR = "rgba(60, 160, 220,"; // Bright IEEE Blue
 
 export default function TechBackground() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -69,10 +69,10 @@ export default function TechBackground() {
           const dist = Math.sqrt(dx * dx + dy * dy);
 
           if (dist < CONNECTION_DISTANCE) {
-            const opacity = (1 - dist / CONNECTION_DISTANCE) * 0.4;
+            const opacity = (1 - dist / CONNECTION_DISTANCE) * 0.7;
             ctx.beginPath();
             ctx.strokeStyle = `${PARTICLE_COLOR} ${opacity})`;
-            ctx.lineWidth = 0.6;
+            ctx.lineWidth = 0.8;
             ctx.moveTo(particles[i].x, particles[i].y);
             ctx.lineTo(particles[j].x, particles[j].y);
             ctx.stroke();
@@ -84,14 +84,9 @@ export default function TechBackground() {
       for (const p of particles) {
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-        ctx.fillStyle = `${PARTICLE_COLOR} 0.6)`;
+        ctx.fillStyle = `${PARTICLE_COLOR} 0.9)`;
         ctx.fill();
 
-        // Glow effect
-        ctx.beginPath();
-        ctx.arc(p.x, p.y, p.radius * 3, 0, Math.PI * 2);
-        ctx.fillStyle = `${PARTICLE_COLOR} 0.08)`;
-        ctx.fill();
       }
 
       animationRef.current = requestAnimationFrame(animate);
@@ -116,7 +111,7 @@ export default function TechBackground() {
     <canvas
       ref={canvasRef}
       className="absolute inset-0 w-full h-full"
-      style={{ opacity: 0.6 }}
+      style={{ opacity: 0.85 }}
     />
   );
 }

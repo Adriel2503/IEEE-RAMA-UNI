@@ -19,6 +19,7 @@ export default function ChaptersMobileCarousel({
   const scrollRef = useRef<HTMLDivElement>(null);
   const [activeIndex, setActiveIndex] = useState(0);
 
+  // Track scroll position to update active dot
   useEffect(() => {
     const container = scrollRef.current;
     if (!container) return;
@@ -33,11 +34,62 @@ export default function ChaptersMobileCarousel({
     return () => container.removeEventListener("scroll", handleScroll);
   }, [chapters.length]);
 
+  // Auto-scroll: move one card at a time, bounce at edges
+  const directionRef = useRef(1);
+  const userInteractedRef = useRef(false);
+
+  useEffect(() => {
+    const container = scrollRef.current;
+    if (!container) return;
+
+    // Pause auto-scroll briefly when user touches/scrolls manually
+    const pauseAuto = () => {
+      userInteractedRef.current = true;
+      clearTimeout(resumeTimer);
+      resumeTimer = setTimeout(() => {
+        userInteractedRef.current = false;
+      }, 4000);
+    };
+
+    let resumeTimer: ReturnType<typeof setTimeout>;
+    container.addEventListener("touchstart", pauseAuto, { passive: true });
+
+    const interval = setInterval(() => {
+      if (userInteractedRef.current || !container) return;
+
+      const maxIndex = chapters.length - 1;
+      let next = activeIndex + directionRef.current;
+
+      if (next > maxIndex) {
+        directionRef.current = -1;
+        next = activeIndex - 1;
+      } else if (next < 0) {
+        directionRef.current = 1;
+        next = activeIndex + 1;
+      }
+
+      container.scrollTo({
+        left: next * (CARD_WIDTH + CARD_GAP),
+        behavior: "smooth",
+      });
+    }, 3000);
+
+    return () => {
+      clearInterval(interval);
+      clearTimeout(resumeTimer);
+      container.removeEventListener("touchstart", pauseAuto);
+    };
+  }, [activeIndex, chapters.length]);
+
   const scrollToIndex = (index: number) => {
+    userInteractedRef.current = true;
     scrollRef.current?.scrollTo({
       left: index * (CARD_WIDTH + CARD_GAP),
       behavior: "smooth",
     });
+    setTimeout(() => {
+      userInteractedRef.current = false;
+    }, 4000);
   };
 
   return (
