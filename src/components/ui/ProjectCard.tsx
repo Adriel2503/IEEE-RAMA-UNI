@@ -15,7 +15,7 @@ export default function ProjectCard({ project, chapters }: ProjectCardProps) {
 
   return (
     <div
-      className="group rounded-[var(--radius-lg)] border border-border bg-surface p-6 transition-all duration-200 hover:shadow-lg hover:-translate-y-1"
+      className="group flex h-full flex-col rounded-[var(--radius-lg)] border border-border bg-surface p-6 transition-all duration-200 hover:shadow-lg hover:-translate-y-1"
       style={{ borderTopColor: chapterColor, borderTopWidth: "3px" }}
     >
       {/* Icon box + Repo link */}
@@ -45,7 +45,7 @@ export default function ProjectCard({ project, chapters }: ProjectCardProps) {
       </p>
 
       {/* Footer: Tags + Chapter badge */}
-      <div className="mt-4 flex items-center justify-between gap-2">
+      <div className="mt-auto pt-4 flex items-center justify-between gap-2">
         <div className="flex flex-wrap gap-1.5">
           {project.tags.map((tag) => (
             <span
