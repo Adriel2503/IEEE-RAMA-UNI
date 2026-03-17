@@ -18,6 +18,7 @@ export interface Event {
   image: string;
   status: "upcoming" | "past";
   location: string;
+  registrationUrl?: string;
 }
 
 export interface Project {

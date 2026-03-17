@@ -1,4 +1,4 @@
-import { MapPin } from "lucide-react";
+import { MapPin, ExternalLink } from "lucide-react";
 import { parseDateParts } from "@/lib/utils";
 import type { Event, Chapter } from "@/lib/types";
 import { IEEE_BLUE } from "@/lib/constants";
@@ -15,7 +15,7 @@ export default function EventCard({ event, chapters }: EventCardProps) {
 
   return (
     <div
-      className="group rounded-[var(--radius-lg)] border border-border bg-surface p-6 transition-all duration-200 hover:shadow-lg hover:-translate-y-1"
+      className="group flex flex-col rounded-[var(--radius-lg)] border border-border bg-surface p-6 transition-all duration-200 hover:shadow-lg hover:-translate-y-1"
       style={{ borderTopColor: chapterColor, borderTopWidth: "3px" }}
     >
       {/* Date box + Status badge */}
@@ -67,6 +67,19 @@ export default function EventCard({ event, chapters }: EventCardProps) {
           </span>
         )}
       </div>
+
+      {/* Registration button */}
+      {event.status === "upcoming" && event.registrationUrl && (
+        <a
+          href={event.registrationUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-4 inline-flex items-center justify-center gap-2 rounded-[var(--radius-md)] bg-primary px-4 py-2.5 text-sm font-semibold text-text-on-primary transition-colors hover:bg-primary-hover"
+        >
+          Inscríbete
+          <ExternalLink className="h-3.5 w-3.5" />
+        </a>
+      )}
     </div>
   );
 }

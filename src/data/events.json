@@ -17,7 +17,8 @@
     "description": "Taller práctico de deep learning y visión por computadora con herramientas de Python y PyTorch.",
     "image": "/images/events/placeholder.jpg",
     "status": "upcoming",
-    "location": "Laboratorio FIEE — UNI, Lima"
+    "location": "Laboratorio FIEE — UNI, Lima",
+    "registrationUrl": "https://forms.google.com/"
   },
   {
     "id": "event-3",
@@ -27,7 +28,8 @@
     "description": "Competencia de robótica abierta a todos los estudiantes de la UNI. Categorías: seguidor de línea y robots autónomos.",
     "image": "/images/events/placeholder.jpg",
     "status": "upcoming",
-    "location": "Campus UNI, Lima"
+    "location": "Campus UNI, Lima",
+    "registrationUrl": "https://forms.google.com/"
   },
   {
     "id": "event-4",
@@ -37,6 +39,7 @@
     "description": "Taller de diseño de circuitos analógicos y digitales con herramientas EDA. Simulación en LTSpice y diseño de PCBs.",
     "image": "/images/events/placeholder.jpg",
     "status": "upcoming",
-    "location": "Laboratorio FIEE — UNI, Lima"
+    "location": "Laboratorio FIEE — UNI, Lima",
+    "registrationUrl": "https://forms.google.com/"
   }
 ]

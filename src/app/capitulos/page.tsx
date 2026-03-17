@@ -9,7 +9,7 @@ import { chapterIcons } from "@/lib/icon-maps";
 export const metadata = {
   title: "Capítulos",
   description:
-    "Conoce los 10 capítulos técnicos de la Rama Estudiantil IEEE UNI.",
+    "Conoce los 11 capítulos técnicos de la Rama Estudiantil IEEE UNI.",
 };
 
 export default function CapitulosPage() {
@@ -20,7 +20,7 @@ export default function CapitulosPage() {
       <div className="mx-auto max-w-7xl px-4 md:px-6">
         <SectionHeading
           title="Nuestros Capítulos"
-          subtitle="10 capítulos técnicos donde puedes desarrollar tu pasión por la ingeniería"
+          subtitle="11 capítulos técnicos donde puedes desarrollar tu pasión por la ingeniería"
         />
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {chapters.map((chapter) => {

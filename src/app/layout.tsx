@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     template: "%s | IEEE UNI",
   },
   description:
-    "Rama Estudiantil IEEE de la UNI. Desde 1967 formando ingenieros. 10 capítulos técnicos, +100 miembros. Únete a la comunidad más grande de ingeniería.",
+    "Rama Estudiantil IEEE de la UNI. Desde 1967 formando ingenieros. 11 capítulos técnicos, +100 miembros. Únete a la comunidad más grande de ingeniería.",
   keywords: [
     "IEEE UNI",
     "IEEE Rama UNI",
