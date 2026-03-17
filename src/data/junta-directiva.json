@@ -1,22 +1,26 @@
 [
   {
-    "name": "Jhon Zelada",
+    "name": "Jhon Lennar Romero Carhuapuma",
     "role": "Presidente",
-    "image": null
+    "email": "jhon.romero.c@uni.pe",
+    "image": "/images/jd/jhon-romero.png"
   },
   {
-    "name": "Ariel Amado",
+    "name": "Ariel Amado Frias Rojas",
     "role": "Vicepresidente",
-    "image": null
+    "email": "ariel.frias.r@uni.pe",
+    "image": "/images/jd/ariel-frias.png"
   },
   {
-    "name": "Ivan Alvizuri",
-    "role": "Tesorero",
-    "image": null
-  },
-  {
-    "name": "Axel",
+    "name": "Sebastián William Rondán Salazar",
     "role": "Secretario",
+    "email": "sebastian.rondan.s@uni.pe",
+    "image": null
+  },
+  {
+    "name": "Iván Alexander Canales Alvizuri",
+    "role": "Tesorero",
+    "email": "ivan.canales.a@uni.pe",
     "image": null
   }
 ]

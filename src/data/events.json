@@ -28,5 +28,15 @@
     "image": "/images/events/placeholder.jpg",
     "status": "upcoming",
     "location": "Campus UNI, Lima"
+  },
+  {
+    "id": "event-4",
+    "title": "CAS Design Workshop 2026",
+    "date": "2026-06-07",
+    "chapter": "cas",
+    "description": "Taller de diseño de circuitos analógicos y digitales con herramientas EDA. Simulación en LTSpice y diseño de PCBs.",
+    "image": "/images/events/placeholder.jpg",
+    "status": "upcoming",
+    "location": "Laboratorio FIEE — UNI, Lima"
   }
 ]

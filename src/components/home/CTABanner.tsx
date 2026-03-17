@@ -22,23 +22,20 @@ export default function CTABanner() {
               transforma tu futuro profesional.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
-              <Button
-                variant="cta"
-                size="lg"
+              <a
                 href={IEEE_JOIN_URL}
                 target="_blank"
                 rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-3 text-lg font-semibold text-primary transition-colors duration-300 hover:bg-blue-50"
               >
                 Únete a IEEE
-              </Button>
-              <Button
-                variant="ghost"
-                size="lg"
+              </a>
+              <a
                 href="/contacto"
-                className="border-2 border-white/30 text-white hover:bg-white/10"
+                className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-3 text-lg font-semibold text-primary transition-colors duration-300 hover:bg-blue-50"
               >
                 Contáctanos
-              </Button>
+              </a>
             </div>
           </div>
         </ScrollReveal>

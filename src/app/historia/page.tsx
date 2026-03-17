@@ -26,6 +26,48 @@ export default function HistoriaPage() {
         </div>
       </section>
 
+      {/* Narrativa */}
+      <section className="bg-background py-16 md:py-24">
+        <div className="mx-auto max-w-3xl px-4 md:px-6">
+          <div className="space-y-6 text-text-secondary leading-relaxed text-base md:text-lg text-justify">
+            <p>
+              La <strong className="text-text">Rama Estudiantil IEEE</strong> de la <strong className="text-text">Universidad Nacional de Ingeniería</strong> fue
+              fundada el <strong className="text-text">13 de abril del año 1967</strong> por un grupo de
+              estudiantes empeñosos que querían formar parte de esta prestigiosa
+              organización mundial. Por razones particulares que se desconocen y
+              por el contexto de la época estuvo inactiva por varios años. En el
+              año <strong className="text-text">1982</strong> fue reactivada gracias a los esfuerzos de un grupo de
+              estudiantes liderado por el entonces estudiante <strong className="text-text">José Sayán Cáceres</strong> y
+              el ingeniero <strong className="text-text">José Valdez Calle</strong>, presidente de la Sección Perú
+              del IEEE.
+            </p>
+            <p>
+              La segunda directiva (<strong className="text-text">1984</strong>), liderada por <strong className="text-text">Enrique Álvarez Rodrich</strong>,
+              consolidó nuestra institución y sentaron los cimientos para futuras
+              actividades. Desde entonces, las directivas se renuevan cada año y
+              fue el trabajo de cada una de ellas el que mantuvo más que activa,
+              sobresaliente, a nuestra Rama Estudiantil.
+            </p>
+            <p>
+              En el año <strong className="text-text">2004</strong> se logra crear el primer capítulo estudiantil,
+              <strong className="text-text"> Potencia y Energía (PES)</strong>, ese mismo año también se apertura el
+              capítulo estudiantil de <strong className="text-text">Comunicaciones (ComSoc)</strong>. Y desde entonces
+              se sumaron los capítulos estudiantiles de <strong className="text-text">Robótica y Automatización
+              (RAS)</strong>, <strong className="text-text">Circuitos y Sistemas (CAS)</strong>, <strong className="text-text">Procesamiento de Señales (SPS)</strong>,
+              <strong className="text-text"> Ingeniería en Medicina y Biología (EMB)</strong>, <strong className="text-text">Aplicaciones Industriales
+              (IAS)</strong> y el grupo de afinidad de <strong className="text-text">Mujeres en Ingeniería (WIE)</strong>.
+            </p>
+            <p>
+              Gracias al esfuerzo y el trabajo de los miembros, nuestra Rama
+              Estudiantil ha recibido diversos reconocimientos nacionales e
+              internacionales como <strong className="text-text">Rama Ejemplar de la Región 9</strong>, <strong className="text-text">Rama Ejemplar
+              de la Sección Perú</strong>, <strong className="text-text">Capítulo Ejemplar de la Región 9</strong>, <strong className="text-text">Capítulo
+              Ejemplar de la Sección Perú</strong>, <strong className="text-text">Premio Larry K. Wilson</strong>, entre otros.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Timeline */}
       <section className="bg-background py-16 md:py-24">
         <div className="mx-auto max-w-4xl px-4 md:px-6">

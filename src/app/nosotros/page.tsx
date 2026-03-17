@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { User } from "lucide-react";
+import { User, Mail } from "lucide-react";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Button from "@/components/ui/Button";
 import jdData from "@/data/junta-directiva.json";
@@ -10,7 +10,7 @@ export const metadata = {
     "Conoce a la Rama Estudiantil IEEE de la Universidad Nacional de Ingeniería.",
 };
 
-const jd = jdData as { name: string; role: string; image: string | null }[];
+const jd = jdData as { name: string; role: string; email: string; image: string | null }[];
 
 export default function NosotrosPage() {
   return (
@@ -25,31 +25,6 @@ export default function NosotrosPage() {
             La comunidad de ingeniería más grande dentro de la Universidad
             Nacional de Ingeniería
           </p>
-        </div>
-      </section>
-
-      {/* Misión y Visión */}
-      <section className="bg-background py-16 md:py-24">
-        <div className="mx-auto max-w-7xl px-4 md:px-6">
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-            <div className="rounded-[var(--radius-lg)] border border-border bg-surface p-8">
-              <h2 className="text-xl font-bold text-text">Misión</h2>
-              <p className="mt-3 text-text-secondary leading-relaxed">
-                Fomentar el desarrollo técnico, profesional y humano de los
-                estudiantes de ingeniería de la UNI, conectándolos con la
-                comunidad global IEEE a través de eventos, proyectos y
-                oportunidades de liderazgo.
-              </p>
-            </div>
-            <div className="rounded-[var(--radius-lg)] border border-border bg-surface p-8">
-              <h2 className="text-xl font-bold text-text">Visión</h2>
-              <p className="mt-3 text-text-secondary leading-relaxed">
-                Ser la rama estudiantil IEEE referente en Latinoamérica, formando
-                ingenieros que transformen la sociedad a través de la tecnología
-                y la innovación.
-              </p>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -102,6 +77,13 @@ export default function NosotrosPage() {
                 <p className="mt-1 text-sm text-text-secondary">
                   {member.role}
                 </p>
+                <a
+                  href={`mailto:${member.email}`}
+                  className="mt-2 inline-flex items-center gap-1.5 text-xs text-primary hover:underline"
+                >
+                  <Mail className="h-3 w-3" />
+                  {member.email}
+                </a>
               </div>
             ))}
           </div>
@@ -118,9 +100,13 @@ export default function NosotrosPage() {
             Más de 59 años formando ingenieros en la UNI
           </p>
           <div className="mt-6">
-            <Button variant="cta" size="lg" href="/historia">
+            <a
+              href="/historia"
+              className="inline-flex items-center gap-2 text-white font-semibold text-lg border-2 border-white rounded-full px-8 py-3 hover:bg-white hover:text-primary transition-colors duration-300"
+            >
               Ver historia completa
-            </Button>
+              <span aria-hidden="true">›</span>
+            </a>
           </div>
         </div>
       </section>

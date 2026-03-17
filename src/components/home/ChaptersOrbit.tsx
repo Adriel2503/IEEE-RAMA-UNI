@@ -236,9 +236,13 @@ function DefaultCenter() {
       <motion.div
         animate={{ scale: [1, 1.05, 1] }}
         transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-        className="mx-auto mb-3 flex h-16 w-16 items-center justify-center rounded-full bg-primary-light"
+        className="mx-auto mb-3"
       >
-        <span className="text-2xl font-bold text-primary">IEEE</span>
+        <img
+          src="/logos/ieee_uni_rgb_u_stacked.svg"
+          alt="IEEE UNI"
+          className="mx-auto h-28 w-auto"
+        />
       </motion.div>
       <p className="text-sm text-text-muted">
         Selecciona un capítulo para explorar

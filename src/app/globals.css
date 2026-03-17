@@ -6,25 +6,25 @@
   --font-heading: var(--font-serif), Georgia, 'Times New Roman', serif;
 
   --color-background: #ffffff;
-  --color-background-alt: #f5f7fa;
+  --color-background-alt: #f4f4f4;
   --color-surface: #ffffff;
   --color-surface-hover: #f1f5f9;
-  --color-dark-surface: #0b1120;
+  --color-dark-surface: #1a1a1a;
 
   --color-primary: #00629b;
-  --color-primary-hover: #004d7a;
+  --color-primary-hover: #002855;
   --color-primary-light: #e0f2fe;
-  --color-primary-dark: #003a5c;
-  --color-accent: #00a0b0;
+  --color-primary-dark: #002855;
+  --color-accent: #668d42;
 
-  --color-text: #0f172a;
-  --color-text-secondary: #475569;
+  --color-text: #333333;
+  --color-text-secondary: #6b6b6b;
   --color-text-muted: #94a3b8;
   --color-text-on-primary: #ffffff;
   --color-text-on-dark: #f1f5f9;
 
-  --color-cta: #f59e0b;
-  --color-cta-hover: #d97706;
+  --color-cta: #e2722e;
+  --color-cta-hover: #c4571e;
   --color-cta-text: #ffffff;
 
   --color-border: #e2e8f0;

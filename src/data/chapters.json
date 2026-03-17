@@ -98,5 +98,15 @@
     "yearFounded": null,
     "globalUrl": "https://www.computer.org/",
     "icon": "Monitor"
+  },
+  {
+    "slug": "aess",
+    "name": "AESS",
+    "fullName": "Aerospace & Electronic Systems Society",
+    "description": "Sistemas aeroespaciales, radar, navegación, aviónica y satélites para aplicaciones de espacio y defensa.",
+    "color": "#1E3A5F",
+    "yearFounded": null,
+    "globalUrl": "https://ieee-aess.org/",
+    "icon": "Rocket"
   }
 ]

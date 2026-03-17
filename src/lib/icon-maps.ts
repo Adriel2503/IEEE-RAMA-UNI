@@ -1,6 +1,6 @@
 import { Instagram, Linkedin, Facebook } from "lucide-react";
 import {
-  Zap, Radio, Bot, Cpu, Activity, HeartPulse, Factory, Sparkles, BrainCircuit, Monitor,
+  Zap, Radio, Bot, Cpu, Activity, HeartPulse, Factory, Sparkles, BrainCircuit, Monitor, Rocket,
 } from "lucide-react";
 
 export const socialIcons: Record<string, React.ComponentType<{ className?: string }>> = {
@@ -10,5 +10,5 @@ export const socialIcons: Record<string, React.ComponentType<{ className?: strin
 };
 
 export const chapterIcons: Record<string, React.ComponentType<{ className?: string; style?: React.CSSProperties }>> = {
-  Zap, Radio, Bot, Cpu, Activity, HeartPulse, Factory, Sparkles, BrainCircuit, Monitor,
+  Zap, Radio, Bot, Cpu, Activity, HeartPulse, Factory, Sparkles, BrainCircuit, Monitor, Rocket,
 };

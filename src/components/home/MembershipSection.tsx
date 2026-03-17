@@ -41,17 +41,16 @@ export default function MembershipSection() {
         </div>
         <ScrollReveal>
           <div className="mt-10 text-center">
-            <Button
-              variant="cta"
-              size="lg"
+            <a
               href={IEEE_JOIN_URL}
               target="_blank"
               rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full bg-primary px-8 py-3 text-lg font-semibold text-white transition-colors duration-300 hover:bg-primary-dark"
             >
               Únete a IEEE
-            </Button>
+            </a>
             <p className="mt-3 text-sm text-text-muted">
-              Membresía estudiantil desde $32 USD/año
+              Membresía estudiantil desde $7 USD/año
             </p>
           </div>
         </ScrollReveal>

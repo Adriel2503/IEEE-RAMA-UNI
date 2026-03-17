@@ -1,6 +1,7 @@
 import HeroCarousel from "@/components/home/HeroCarousel";
 import StatsBar from "@/components/home/StatsBar";
 import AboutSection from "@/components/home/AboutSection";
+import MissionVision from "@/components/home/MissionVision";
 import ChaptersGrid from "@/components/home/ChaptersGrid";
 import EventsSection from "@/components/home/EventsSection";
 import ProjectsSection from "@/components/home/ProjectsSection";
@@ -13,6 +14,7 @@ export default function HomePage() {
       <HeroCarousel />
       <StatsBar />
       <AboutSection />
+      <MissionVision />
       <ChaptersGrid />
       <EventsSection />
       <ProjectsSection />
