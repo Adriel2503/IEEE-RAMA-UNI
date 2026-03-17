@@ -81,9 +81,10 @@ export default function NosotrosPage() {
                   <a
                     href={`mailto:${member.email}`}
                     className="inline-flex items-center gap-1.5 text-xs text-primary hover:underline"
+                    aria-label={`Email de ${member.name}`}
                   >
                     <Mail className="h-3.5 w-3.5" />
-                    {member.email}
+                    <span className="hidden md:inline">{member.email}</span>
                   </a>
                   {member.linkedin && (
                     <a
