@@ -1,3 +1,4 @@
+import Image from "next/image";
 import SectionHeading from "@/components/ui/SectionHeading";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 import Button from "@/components/ui/Button";
@@ -43,17 +44,16 @@ export default function AboutSection() {
               </div>
             </div>
 
-            {/* Image placeholder */}
+            {/* Image */}
             <div className="relative">
-              <div className="aspect-[4/3] overflow-hidden rounded-[var(--radius-lg)] bg-primary/10">
-                <div className="flex h-full w-full items-center justify-center">
-                  <div className="text-center">
-                    <p className="text-5xl font-bold text-primary/30">IEEE</p>
-                    <p className="mt-2 text-sm text-text-muted">
-                      Foto grupal de la rama
-                    </p>
-                  </div>
-                </div>
+              <div className="aspect-[4/3] overflow-hidden rounded-[var(--radius-lg)]">
+                <Image
+                  src="/images/general/rama-grupal.jpeg"
+                  alt="Miembros de la Rama Estudiantil IEEE UNI en congreso"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
               </div>
               {/* Decorative accent */}
               <div className="absolute -bottom-4 -right-4 -z-10 h-full w-full rounded-[var(--radius-lg)] bg-primary/5" />
