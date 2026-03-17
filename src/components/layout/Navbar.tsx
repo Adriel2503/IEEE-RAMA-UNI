@@ -43,10 +43,10 @@ export default function Navbar() {
           <Image
             src="/logos/ieee_uni_rgb_u_horizontal.svg"
             alt="IEEE UNI - Universidad Nacional de Ingeniería"
-            width={200}
-            height={40}
+            width={160}
+            height={32}
             className={cn(
-              "h-10 w-auto transition-opacity",
+              "h-8 w-auto transition-opacity",
               scrolled ? "block" : "hidden"
             )}
             priority
@@ -54,10 +54,10 @@ export default function Navbar() {
           <Image
             src="/logos/ieee_uni_rgb_u_horizontal_w.png"
             alt="IEEE UNI - Universidad Nacional de Ingeniería"
-            width={200}
-            height={40}
+            width={160}
+            height={32}
             className={cn(
-              "h-10 w-auto transition-opacity",
+              "h-8 w-auto transition-opacity",
               scrolled ? "hidden" : "block"
             )}
             priority
