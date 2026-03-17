@@ -6,7 +6,6 @@ import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import Button from "@/components/ui/Button";
 import navigationData from "@/data/navigation.json";
-import { cn } from "@/lib/utils";
 import { IEEE_JOIN_URL } from "@/lib/constants";
 
 export default function Navbar() {
@@ -21,9 +20,9 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header className="w-full bg-[#1a1a1a]">
+    <header className="w-full bg-background border-b border-border">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 md:px-6">
-        {/* Logo — always white on dark */}
+        {/* Logo */}
         <Link href="/" className="flex items-center" onClick={() => setIsOpen(false)}>
           <Image
             src="/logos/ieee_uni_rgb_u_horizontal.svg"
@@ -42,7 +41,7 @@ export default function Navbar() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="rounded-[var(--radius-md)] px-3 py-2 text-sm font-medium text-gray-300 transition-colors hover:text-white"
+                className="rounded-[var(--radius-md)] px-3 py-2 text-sm font-medium text-text-secondary transition-colors hover:bg-surface-hover hover:text-text"
               >
                 {item.label}
               </Link>
@@ -64,7 +63,7 @@ export default function Navbar() {
         <div className="flex items-center gap-2 lg:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="flex h-10 w-10 items-center justify-center rounded-[var(--radius-md)] cursor-pointer text-white hover:bg-white/10 transition-colors"
+            className="flex h-10 w-10 items-center justify-center rounded-[var(--radius-md)] cursor-pointer text-text-secondary hover:bg-surface-hover transition-colors"
             aria-label={isOpen ? "Cerrar menú" : "Abrir menú"}
           >
             {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -74,19 +73,19 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {isOpen && (
-        <div className="px-4 py-4 lg:hidden border-t border-white/10 bg-[#1a1a1a]">
+        <div className="px-4 py-4 lg:hidden border-t border-border bg-background">
           <div className="flex flex-col gap-1">
             {navigationData.mainNav.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
                 onClick={() => setIsOpen(false)}
-                className="rounded-[var(--radius-md)] px-3 py-2.5 text-sm font-medium text-gray-300 transition-colors hover:bg-white/10 hover:text-white"
+                className="rounded-[var(--radius-md)] px-3 py-2.5 text-sm font-medium text-text-secondary transition-colors hover:bg-surface-hover hover:text-text"
               >
                 {item.label}
               </Link>
             ))}
-            <div className="mt-3 border-t border-white/10 pt-3">
+            <div className="mt-3 border-t border-border pt-3">
               <Button
                 variant="primary"
                 size="md"
