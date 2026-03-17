@@ -60,48 +60,47 @@ export default function HeroCarousel() {
           aria-hidden={index !== current}
         >
           <div className="mx-auto w-full max-w-7xl px-4 pb-16 md:px-6 md:pb-20">
-            {/* Blue card overlay — ieee.org style */}
-            <div className="max-w-2xl">
+            <div className="max-w-2xl overflow-hidden rounded-2xl shadow-2xl shadow-black/40">
               {/* Title block with blue background */}
-              <div className="bg-primary/90 backdrop-blur-sm px-8 py-6 md:px-10 md:py-8">
+              <div className="bg-gradient-to-r from-primary to-primary/85 backdrop-blur-sm px-8 py-8 md:px-10 md:py-10">
                 {index === 0 ? (
-                  <h1 className="font-heading text-2xl font-semibold leading-snug text-white md:text-4xl lg:text-[2.5rem]">
+                  <h1 className="font-heading text-2xl font-semibold leading-snug text-white md:text-4xl lg:text-[2.75rem]">
                     {slide.title}
                   </h1>
                 ) : (
-                  <p className="font-heading text-2xl font-semibold leading-snug text-white md:text-4xl lg:text-[2.5rem]">
+                  <p className="font-heading text-2xl font-semibold leading-snug text-white md:text-4xl lg:text-[2.75rem]">
                     {slide.title}
                   </p>
                 )}
               </div>
 
-              {/* Description + CTA on white/light card */}
-              <div className="bg-white px-8 py-5 md:px-10 md:py-6 flex items-center justify-between gap-4">
+              {/* Description + CTA */}
+              <div className="bg-white/95 backdrop-blur-sm px-8 py-6 md:px-10 md:py-7 flex items-center justify-between gap-6">
                 <div className="flex-1">
-                  <p className="text-sm text-gray-700 md:text-base leading-relaxed">
+                  <p className="text-sm text-gray-600 md:text-base leading-relaxed">
                     {slide.description}
                   </p>
                   <a
                     href={slide.cta.href}
-                    className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-primary hover:underline"
+                    className="mt-4 inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2 text-sm font-semibold text-white hover:bg-primary/90 transition-colors"
                   >
-                    <ChevronRight className="h-4 w-4" />
                     {slide.cta.label}
+                    <ChevronRight className="h-4 w-4" />
                   </a>
                 </div>
 
-                {/* Carousel arrows — inside card (ieee.org style) */}
+                {/* Carousel arrows */}
                 <div className="hidden flex-col gap-1 md:flex">
                   <button
                     onClick={next}
-                    className="flex h-8 w-8 items-center justify-center rounded-full text-primary hover:bg-gray-100 transition-colors cursor-pointer"
+                    className="flex h-9 w-9 items-center justify-center rounded-full text-primary/70 hover:bg-primary/10 hover:text-primary transition-colors cursor-pointer"
                     aria-label="Siguiente slide"
                   >
                     <ChevronRight className="h-5 w-5" />
                   </button>
                   <button
                     onClick={prev}
-                    className="flex h-8 w-8 items-center justify-center rounded-full text-primary hover:bg-gray-100 transition-colors cursor-pointer"
+                    className="flex h-9 w-9 items-center justify-center rounded-full text-primary/70 hover:bg-primary/10 hover:text-primary transition-colors cursor-pointer"
                     aria-label="Slide anterior"
                   >
                     <ChevronLeft className="h-5 w-5" />

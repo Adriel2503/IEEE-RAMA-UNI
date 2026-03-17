@@ -3,24 +3,28 @@
     "name": "Jhon Lennar Romero Carhuapuma",
     "role": "Presidente",
     "email": "jhon.romero.c@uni.pe",
-    "image": "/images/jd/jhon-romero.png"
+    "image": "/images/jd/jhon-romero.png",
+    "linkedin": "https://www.linkedin.com/in/jhon-lennar-romero-carhuapuma-359838273"
   },
   {
     "name": "Ariel Amado Frias Rojas",
     "role": "Vicepresidente",
     "email": "ariel.frias.r@uni.pe",
-    "image": "/images/jd/ariel-frias.png"
+    "image": "/images/jd/ariel-frias.png",
+    "linkedin": "https://www.linkedin.com/in/ariel-amado-frias-rojas-b24061220"
   },
   {
     "name": "Sebastián William Rondán Salazar",
     "role": "Secretario",
     "email": "sebastian.rondan.s@uni.pe",
-    "image": null
+    "image": "/images/jd/sebastian-rondan.png",
+    "linkedin": "https://www.linkedin.com/in/sebastian-william-rondan-salazar-792614343"
   },
   {
     "name": "Iván Alexander Canales Alvizuri",
     "role": "Tesorero",
     "email": "ivan.canales.a@uni.pe",
-    "image": null
+    "image": "/images/jd/ivan-canales.png",
+    "linkedin": "https://www.linkedin.com/in/ivan-alexander-canales-alvizuri-0841bb305"
   }
 ]

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { User, Mail } from "lucide-react";
+import { User, Mail, Linkedin } from "lucide-react";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Button from "@/components/ui/Button";
 import jdData from "@/data/junta-directiva.json";
@@ -10,7 +10,7 @@ export const metadata = {
     "Conoce a la Rama Estudiantil IEEE de la Universidad Nacional de Ingeniería.",
 };
 
-const jd = jdData as { name: string; role: string; email: string; image: string | null }[];
+const jd = jdData as { name: string; role: string; email: string; image: string | null; linkedin?: string }[];
 
 export default function NosotrosPage() {
   return (
@@ -77,13 +77,26 @@ export default function NosotrosPage() {
                 <p className="mt-1 text-sm text-text-secondary">
                   {member.role}
                 </p>
-                <a
-                  href={`mailto:${member.email}`}
-                  className="mt-2 inline-flex items-center gap-1.5 text-xs text-primary hover:underline"
-                >
-                  <Mail className="h-3 w-3" />
-                  {member.email}
-                </a>
+                <div className="mt-2 flex items-center gap-3">
+                  <a
+                    href={`mailto:${member.email}`}
+                    className="inline-flex items-center gap-1.5 text-xs text-primary hover:underline"
+                  >
+                    <Mail className="h-3.5 w-3.5" />
+                    {member.email}
+                  </a>
+                  {member.linkedin && (
+                    <a
+                      href={member.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary/60 hover:text-primary transition-colors"
+                      aria-label={`LinkedIn de ${member.name}`}
+                    >
+                      <Linkedin className="h-4 w-4" />
+                    </a>
+                  )}
+                </div>
               </div>
             ))}
           </div>
