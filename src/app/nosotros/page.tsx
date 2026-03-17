@@ -33,9 +33,6 @@ export default function NosotrosPage() {
         <div className="mx-auto max-w-7xl px-4 md:px-6">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
             <div className="rounded-[var(--radius-lg)] border border-border bg-surface p-8">
-              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-primary-light">
-                <span className="text-xl font-bold text-primary">M</span>
-              </div>
               <h2 className="text-xl font-bold text-text">Misión</h2>
               <p className="mt-3 text-text-secondary leading-relaxed">
                 Fomentar el desarrollo técnico, profesional y humano de los
@@ -45,9 +42,6 @@ export default function NosotrosPage() {
               </p>
             </div>
             <div className="rounded-[var(--radius-lg)] border border-border bg-surface p-8">
-              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-primary-light">
-                <span className="text-xl font-bold text-primary">V</span>
-              </div>
               <h2 className="text-xl font-bold text-text">Visión</h2>
               <p className="mt-3 text-text-secondary leading-relaxed">
                 Ser la rama estudiantil IEEE referente en Latinoamérica, formando
