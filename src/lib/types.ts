@@ -29,6 +29,12 @@ export interface Project {
   tags: string[];
   image: string;
   repoUrl?: string;
+  fullDescription?: string;
+  impact?: string;
+  status?: "active" | "completed";
+  contactName?: string;
+  contactEmail?: string;
+  supportInfo?: string;
 }
 
 export interface Stat {

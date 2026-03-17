@@ -45,7 +45,7 @@ export default function EventCard({ event, chapters }: EventCardProps) {
       <h3 className="text-lg font-bold text-text group-hover:text-primary transition-colors">
         {event.title}
       </h3>
-      <p className="mt-2 text-sm text-text-secondary line-clamp-2">
+      <p className="mt-2 text-sm text-text-secondary line-clamp-2 text-justify">
         {event.description}
       </p>
 

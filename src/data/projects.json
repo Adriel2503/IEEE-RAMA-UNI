@@ -6,7 +6,13 @@
     "chapter": "sps",
     "tags": ["Python", "OpenCV", "OpenAI", "TTS"],
     "image": "/images/projects/placeholder.jpg",
-    "repoUrl": "https://github.com/ieee-uni"
+    "repoUrl": "https://github.com/ieee-uni",
+    "status": "active",
+    "fullDescription": "Este proyecto desarrolla una aplicación móvil que utiliza la cámara del dispositivo para capturar el entorno y, mediante modelos de visión por computadora e inteligencia artificial, genera descripciones en audio en tiempo real. El sistema emplea OpenCV para el procesamiento de imágenes, modelos de OpenAI para la interpretación semántica del entorno, y tecnología Text-to-Speech (TTS) para la salida en audio. Está diseñado para funcionar en condiciones variadas de iluminación y entornos tanto interiores como exteriores.",
+    "impact": "Mejorar la autonomía y calidad de vida de personas con discapacidad visual en el Perú. Según el INEI, más de 600,000 peruanos tienen algún grado de discapacidad visual. Este sistema les permitiría navegar espacios desconocidos con mayor seguridad e independencia.",
+    "contactName": "Capítulo SPS — IEEE UNI",
+    "contactEmail": "sps@ieee-uni.org",
+    "supportInfo": "Buscamos sponsors para cubrir costos de API de IA, dispositivos de prueba y producción de prototipos. También necesitamos voluntarios para pruebas de usabilidad con usuarios finales. Si deseas colaborar como mentor técnico o aportar económicamente, contáctanos."
   },
   {
     "id": "project-2",
@@ -14,7 +20,13 @@
     "description": "Diseño y construcción de un robot seguidor de línea con sensores infrarrojos y control PID para competencias de robótica.",
     "chapter": "ras",
     "tags": ["Arduino", "Control PID", "Electrónica"],
-    "image": "/images/projects/placeholder.jpg"
+    "image": "/images/projects/placeholder.jpg",
+    "status": "active",
+    "fullDescription": "Proyecto integral que abarca el diseño mecánico, electrónico y de software de un robot autónomo capaz de seguir trayectorias marcadas en el suelo. Utiliza un arreglo de sensores infrarrojos QTR-8RC para la detección de línea, un microcontrolador Arduino Mega para el procesamiento, y un algoritmo de control PID sintonizado para lograr velocidades competitivas manteniendo la estabilidad en curvas cerradas. El chasis fue diseñado en SolidWorks e impreso en 3D.",
+    "impact": "Formar a estudiantes en robótica aplicada, control automático y trabajo en equipo. Los robots participan en competencias nacionales como la IEEE RoboTEC y competencias internacionales, posicionando a la UNI en el mapa de la robótica estudiantil latinoamericana.",
+    "contactName": "Capítulo RAS — IEEE UNI",
+    "contactEmail": "ras@ieee-uni.org",
+    "supportInfo": "Necesitamos apoyo para la compra de componentes electrónicos, motores de alta velocidad y baterías LiPo. También buscamos sponsors para cubrir inscripciones y viáticos a competencias nacionales e internacionales. Toda contribución ayuda a que más estudiantes accedan a esta experiencia."
   },
   {
     "id": "project-3",
@@ -22,6 +34,12 @@
     "description": "Proyecto de diseño de un amplificador operacional de dos etapas en tecnología CMOS 180nm usando herramientas EDA.",
     "chapter": "cas",
     "tags": ["VLSI", "Cadence", "CMOS", "Analog Design"],
-    "image": "/images/projects/placeholder.jpg"
+    "image": "/images/projects/placeholder.jpg",
+    "status": "completed",
+    "fullDescription": "Diseño completo de un amplificador operacional de dos etapas (telescópico + clase AB) en tecnología CMOS 180nm. El proyecto incluye el diseño esquemático, simulación AC/DC/transiente en Cadence Virtuoso, layout físico con verificación DRC/LVS, y extracción de parásitos. Se logró un gain-bandwidth product de 50 MHz con un consumo de 1.2 mW, cumpliendo con las especificaciones para aplicaciones de procesamiento de señales.",
+    "impact": "Capacitar a estudiantes en diseño de circuitos integrados analógicos, una competencia escasa en el Perú y con alta demanda global. El proyecto documenta el flujo completo de diseño VLSI, sirviendo como material de referencia para futuros estudiantes del capítulo.",
+    "contactName": "Capítulo CAS — IEEE UNI",
+    "contactEmail": "cas@ieee-uni.org",
+    "supportInfo": "Este proyecto fue completado exitosamente. Para futuros proyectos de diseño VLSI, buscamos acceso a licencias de software EDA (Cadence, Synopsys) y posibles colaboraciones con la industria de semiconductores. Si tu empresa puede aportar licencias académicas o mentoría, contáctanos."
   }
 ]

@@ -16,7 +16,7 @@ export default function AboutSection() {
                 align="left"
                 subtitle="La comunidad de ingeniería más grande dentro de la UNI"
               />
-              <div className="space-y-4 text-text-secondary">
+              <div className="space-y-4 text-text-secondary text-justify">
                 <p>
                   La Rama Estudiantil IEEE de la Universidad Nacional de
                   Ingeniería fue fundada el <strong className="text-text">13 de abril de 1967</strong>,

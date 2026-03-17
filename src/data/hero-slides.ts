@@ -14,7 +14,7 @@ export const heroSlides: HeroSlide[] = [
     cta: { label: "Únete ahora", href: IEEE_JOIN_URL },
   },
   {
-    title: "10 Capítulos Técnicos para Tu Pasión",
+    title: "11 Capítulos Técnicos para Tu Pasión",
     description:
       "Robótica, circuitos, inteligencia artificial, biomedicina, energía y más. Encuentra tu camino en la ingeniería.",
     cta: { label: "Ver capítulos", href: "/capitulos" },

@@ -1,4 +1,5 @@
-import { ExternalLink, Cpu } from "lucide-react";
+import Link from "next/link";
+import { Cpu } from "lucide-react";
 import type { Project, Chapter } from "@/lib/types";
 import { IEEE_BLUE } from "@/lib/constants";
 import { chapterIcons } from "@/lib/icon-maps";
@@ -14,11 +15,12 @@ export default function ProjectCard({ project, chapters }: ProjectCardProps) {
   const Icon = chapter ? (chapterIcons[chapter.icon] || Cpu) : Cpu;
 
   return (
-    <div
+    <Link
+      href={`/proyectos/${project.id}`}
       className="group flex h-full flex-col rounded-[var(--radius-lg)] border border-border bg-surface p-6 transition-all duration-200 hover:shadow-lg hover:-translate-y-1"
       style={{ borderTopColor: chapterColor, borderTopWidth: "3px" }}
     >
-      {/* Icon box + Repo link */}
+      {/* Icon box + Status */}
       <div className="mb-4 flex items-start justify-between">
         <div
           className="flex h-12 w-12 items-center justify-center rounded-[var(--radius-md)]"
@@ -26,21 +28,23 @@ export default function ProjectCard({ project, chapters }: ProjectCardProps) {
         >
           <Icon className="h-6 w-6" style={{ color: chapterColor }} />
         </div>
-        {project.repoUrl && (
-          <a
-            href={project.repoUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-text-muted hover:text-primary transition-colors"
-            aria-label="Ver repositorio"
+        {project.status && (
+          <span
+            className={`rounded-full px-2.5 py-0.5 text-xs font-semibold ${
+              project.status === "active"
+                ? "bg-green-50 text-green-700"
+                : "bg-gray-100 text-gray-500"
+            }`}
           >
-            <ExternalLink className="h-4 w-4" />
-          </a>
+            {project.status === "active" ? "Activo" : "Completado"}
+          </span>
         )}
       </div>
 
-      <h3 className="text-lg font-bold text-text">{project.title}</h3>
-      <p className="mt-2 text-sm text-text-secondary line-clamp-2">
+      <h3 className="text-lg font-bold text-text group-hover:text-primary transition-colors">
+        {project.title}
+      </h3>
+      <p className="mt-2 text-sm text-text-secondary line-clamp-2 text-justify">
         {project.description}
       </p>
 
@@ -68,6 +72,11 @@ export default function ProjectCard({ project, chapters }: ProjectCardProps) {
           </span>
         )}
       </div>
-    </div>
+
+      {/* Ver más hint */}
+      <div className="mt-4 text-sm font-semibold text-primary opacity-0 group-hover:opacity-100 transition-opacity">
+        Ver proyecto &rarr;
+      </div>
+    </Link>
   );
 }
