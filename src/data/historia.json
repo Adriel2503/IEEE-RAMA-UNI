@@ -1,0 +1,47 @@
+{
+  "timeline": [
+    {
+      "year": 1967,
+      "title": "Fundación",
+      "description": "La Rama Estudiantil IEEE de la UNI fue fundada el 13 de abril por un grupo de estudiantes empeñosos que querían formar parte de esta prestigiosa organización mundial.",
+      "image": null
+    },
+    {
+      "year": 1982,
+      "title": "Reactivación",
+      "description": "Tras años de inactividad, la rama fue reactivada gracias a los esfuerzos de un grupo de estudiantes liderado por José Sayán Cáceres y el ingeniero José Valdez Calle, presidente de la Sección Perú del IEEE.",
+      "image": null
+    },
+    {
+      "year": 1984,
+      "title": "Consolidación",
+      "description": "La segunda directiva, liderada por Enrique Álvarez Rodrich, consolidó la institución y sentó los cimientos para futuras actividades. Se inauguró el local de la Rama Estudiantil el 8 de noviembre.",
+      "image": "/images/general/placa-inauguracion-1984.jpeg"
+    },
+    {
+      "year": 2004,
+      "title": "Primeros capítulos estudiantiles",
+      "description": "Se crean los capítulos de Potencia y Energía (PES) y Comunicaciones (ComSoc), los primeros capítulos estudiantiles de la rama.",
+      "image": null
+    },
+    {
+      "year": 2017,
+      "title": "50 aniversario",
+      "description": "La Sección Perú del IEEE otorga un reconocimiento especial a la Rama Estudiantil por sus 50 años de trayectoria y valiosas contribuciones.",
+      "image": "/images/general/reconocimiento-50-aniversario.jpeg"
+    }
+  ],
+  "presidents": [
+    { "year": "1967", "name": "Por confirmar" },
+    { "year": "1982", "name": "José Sayán Cáceres" },
+    { "year": "1984", "name": "Enrique Álvarez Rodrich" },
+    { "year": "2026", "name": "Jhon Zelada" }
+  ],
+  "awards": [
+    "Rama Ejemplar de la Región 9",
+    "Rama Ejemplar de la Sección Perú",
+    "Capítulo Ejemplar de la Región 9",
+    "Capítulo Ejemplar de la Sección Perú",
+    "Premio Larry K. Wilson"
+  ]
+}
