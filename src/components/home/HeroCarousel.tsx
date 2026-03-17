@@ -5,6 +5,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { heroSlides } from "@/data/hero-slides";
 import { CAROUSEL_INTERVAL_MS } from "@/lib/constants";
+import TechBackground from "./TechBackground";
 
 export default function HeroCarousel() {
   const [current, setCurrent] = useState(0);
@@ -43,6 +44,9 @@ export default function HeroCarousel() {
             backgroundSize: "60px 60px",
           }}
         />
+
+        {/* Animated tech network */}
+        <TechBackground />
       </div>
 
       {/* Slides — Card overlay style (like ieee.org) */}
